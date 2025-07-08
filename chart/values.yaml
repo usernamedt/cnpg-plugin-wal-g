@@ -17,7 +17,7 @@ replicaCount: 1
 
 # Image for plugin controller-manager deployment
 image:
-  repository: ghcr.io/wal-g/cnpg-plugin-wal-g
+  repository: ghcr.io/usernamedt/cnpg-plugin-wal-g
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
