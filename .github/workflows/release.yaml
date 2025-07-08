@@ -79,7 +79,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           # Build and push the Docker image with the version tag
-          make docker-build docker-push IMG=ghcr.io/wal-g/cnpg-plugin-wal-g:${{ steps.extract_version.outputs.version }}
+          make docker-build docker-push IMG=ghcr.io/usernamedt/cnpg-plugin-wal-g:${{ steps.extract_version.outputs.version }}
 
           # Also tag as latest
-          make docker-build docker-push IMG=ghcr.io/wal-g/cnpg-plugin-wal-g:latest
+          make docker-build docker-push IMG=ghcr.io/usernamedt/cnpg-plugin-wal-g:latest
